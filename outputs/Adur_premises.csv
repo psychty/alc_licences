@@ -1,0 +1,159 @@
+"Licence_number","Name","Address","Postcode","Reference","Alcohol OFF Sales/Supply","Alcohol ON Sales/Supply","Alcohol ON&OFF Sales/Supply","Late Night Refresh","longitude","latitude"
+1,"Yun Feng Foods","  Yun Feng Foods, 18 Southwick Square, Southwick, West Sussex, BN42 4FJ","BN42 4FJ","LN/201000013","Alcohol OFF Sales/Supply",NA,NA,NA,-0.236854,50.834473
+1,"Water Wellbeing Ltd (Edgars Water)","  Water Wellbeing Ltd (Edgars Water), Unit A1-A3, Dolphin Enterprise Centre, Evershed Way, Shoreham-By-Sea, West Sussex, BN43 6QB","BN43 6QB","LN/201500019","Alcohol OFF Sales/Supply",NA,NA,NA,-0.258308,50.83383
+2,"Waterside Inn","  Waterside Inn, Lower Beach Road, Shoreham-By-Sea, West Sussex, BN43 5RA","BN43 5RA","LN/200500317",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.271918,50.829069
+3,"West Street Loft","  West Street Loft, 20 West Street, Shoreham-By-Sea, West Sussex, BN43 5WG","BN43 5WG","LN/201200062",NA,"Alcohol ON Sales/Supply",NA,NA,-0.277398,50.833727
+4,"Windmill Convenience Store","  Windmill Convenience Store, 3-4 Windmill Parade, 163-183 Old Shoreham Road, Southwick, West Sussex, BN42 4QB","BN42 4QB","LN/200500284","Alcohol OFF Sales/Supply",NA,NA,NA,-0.233106,50.840457
+1,"V & P Convenience Store","  V & P Convenience Store, 391 Brighton Road, Lancing, West Sussex, BN15 8JX","BN15 8JX","LN/200500274","Alcohol OFF Sales/Supply",NA,NA,NA,-0.297227,50.825825
+1,"TeamSport Indoor Karting","  TeamSport Indoor Karting, Unit 2, 30 Chartwell Road, Lancing, West Sussex, BN15 8TU","BN15 8TU","LN/201100150",NA,"Alcohol ON Sales/Supply",NA,NA,-0.333711,50.82324
+2,"Tesco","  Tesco, Store, Holmbush Centre, Upper Shoreham Road, Shoreham-By-Sea, West Sussex, BN43 6TD","BN43 6TD","LN/200700236","Alcohol OFF Sales/Supply",NA,NA,NA,-0.251892,50.842098
+3,"Tesco Express","  Tesco Express, 225 Upper Shoreham Road, Shoreham-By-Sea, West Sussex, BN43 6BE","BN43 6BE","LN/201200074","Alcohol OFF Sales/Supply",NA,NA,NA,-0.263195,50.839893
+4,"The Amsterdam Inn","  The Amsterdam Inn, 467-471 Upper Shoreham Road, Shoreham-By-Sea, West Sussex, BN43 5WQ","BN43 5WQ","LN/200500343",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.28541,50.839514
+5,"The Beach Shop","  The Beach Shop, 23-27 Ferry Road, Shoreham-By-Sea, West Sussex, BN43 5RA","BN43 5RA","LN/200500285","Alcohol OFF Sales/Supply",NA,NA,NA,-0.271918,50.829069
+6,"The Bridge Inn","  The Bridge Inn, 87 High Street, Shoreham-By-Sea, West Sussex, BN43 5DE","BN43 5DE","LN/200500345",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.277713,50.832113
+7,"The Buckingham Arms","  The Buckingham Arms, 35 Brunswick Road, Shoreham-By-Sea, West Sussex, BN43 5WA","BN43 5WA","LN/200500352",NA,"Alcohol ON Sales/Supply","Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.272847,50.833903
+8,"The Crab Tree","  The Crab Tree, The Crab Tree, 6 Buckingham Road, Shoreham-By-Sea, West Sussex, BN43 5UA","BN43 5UA","LN/200500335",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.272374,50.83522
+9,"The Crabtree PH","  The Crabtree PH, The Crabtree, 140 Crabtree Lane, Lancing, West Sussex, BN15 9NQ","BN15 9NQ","LN/200500324",NA,"Alcohol ON Sales/Supply","Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.329068,50.832392
+10,"The Harbour Club","  The Harbour Club, Harbour Way, Shoreham-By-Sea, West Sussex, BN43 5HG","BN43 5HG","LN/200900051",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.263153,50.829559
+11,"The Harbour Club (bar)","  The Harbour Club (bar), The Harbour Club, Harbour Way, Shoreham-By-Sea, West Sussex, BN43 5HG","BN43 5HG","LN/200500321",NA,"Alcohol ON Sales/Supply",NA,NA,-0.263153,50.829559
+12,"The Joyful Whippet","  The Joyful Whippet, Steepdown Road, Sompting, West Sussex, BN15 0LJ","BN15 0LJ","LN/200500337",NA,"Alcohol ON Sales/Supply","Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.335547,50.83949
+13,"The Longshore","  The Longshore, The Longshore, 153 Brighton Road, Shoreham-By-Sea, West Sussex, BN43 5LD","BN43 5LD","LN/200500331",NA,"Alcohol ON Sales/Supply","Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.289527,50.827484
+14,"The Marlipins Public House","  The Marlipins Public House, 38 High Street, Shoreham-By-Sea, West Sussex, BN43 5DA","BN43 5DA","LN/200500341",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.275634,50.831893
+15,"The Mooring","  The Mooring, Emerald Quay Club, Emerald Quay, Shoreham-By-Sea, West Sussex, BN43 5JP","BN43 5JP","LN/200600097",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.26541,50.830357
+16,"The New Port Arms","  The New Port Arms, Lady Bee Marina, Albion Street, Southwick, West Sussex, BN42 4EG","BN42 4EG","LN/200500289",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.23645,50.831266
+17,"The New Sussex Hotel","  The New Sussex Hotel, The New Sussex Hotel, 182 South Street, Lancing, West Sussex, BN15 8AU","BN15 8AU","LN/200500347",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.324553,50.822057
+18,"The Old Star Ale & Cider House","  The Old Star Ale & Cider House, Old Star Ale And Cider House, Church Street, Shoreham-By-Sea, West Sussex, BN43 5DQ","BN43 5DQ","LN/201300262",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.275172,50.832501
+19,"The Plaice in the Square","  The Plaice in the Square, 3 Southwick Square, Southwick, West Sussex, BN42 4FP","BN42 4FP","LN/200500258",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.236313,50.834112
+20,"The Railway Inn","  The Railway Inn, 1 North Road, Lancing, West Sussex, BN15 9AH","BN15 9AH","LN/200500360",NA,"Alcohol ON Sales/Supply","Alcohol ON&OFF Sales/Supply",NA,-0.322829,50.827817
+21,"The Red Lion","  The Red Lion, Old Shoreham Road, Shoreham-By-Sea, West Sussex, BN43 5TE","BN43 5TE","LN/200500357",NA,"Alcohol ON Sales/Supply","Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.284523,50.838113
+22,"The Romans Hotel","  The Romans Hotel, Manor Hall Road, Southwick, West Sussex, BN42 4NG","BN42 4NG","LN/200500362",NA,"Alcohol ON Sales/Supply","Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.229851,50.836757
+23,"The Ropetackle Centre","  The Ropetackle Centre, Little High Street, Shoreham-By-Sea, West Sussex, BN43 5EG","BN43 5EG","LN/200700299",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.279074,50.832574
+24,"The Schooner","  The Schooner, 146 Albion Street, Southwick, West Sussex, BN42 4AU","BN42 4AU","LN/200500336",NA,"Alcohol ON Sales/Supply","Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.234285,50.83144
+25,"The Stanley Ale House","  The Stanley Ale House, 5 Queensway, Lancing, West Sussex, BN15 9AY","BN15 9AY","LN/201400624",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.321783,50.828825
+26,"The Tap House","  The Tap House, Ground Floor, 16-18 East Street, Shoreham-By-Sea, West Sussex, BN43 5ZE","BN43 5ZE","LN/200600051",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.274502,50.832174
+27,"Tides Pizzeria","  Tides Pizzeria, 21 Ferry Road, Shoreham-By-Sea, West Sussex, BN43 5RA","BN43 5RA","LN/201800296",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.271918,50.829069
+28,"Toast by the Coast","  Toast by the Coast, 8-10 East Street, Shoreham-By-Sea, West Sussex, BN43 5ZE","BN43 5ZE","LN/200700334",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.274502,50.832174
+29,"Tom Foolery Coffee Co","  Tom Foolery Coffee Co, 6 High Street, Shoreham-By-Sea, West Sussex, BN43 5DA","BN43 5DA","LN/201600154",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.275634,50.831893
+30,"Tosca Prosecco & Tapas Bar","  Tosca Prosecco & Tapas Bar, 20A Southwick Square, Southwick, West Sussex, BN42 4FJ","BN42 4FJ","LN/201600342",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.236854,50.834473
+31,"Tosca Ristorante","  Tosca Ristorante, 39-41 High Street, Shoreham-By-Sea, West Sussex, BN43 5DD","BN43 5DD","LN/200800232",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.276111,50.831667
+1,"Seaside Primary School","  Seaside Primary School, Freshbrook Road, Lancing, West Sussex, BN15 8DL","BN15 8DL","LN/200600001",NA,NA,NA,NA,-0.312834,50.826547
+2,"Shell Budgens Shoreham Airport","  Shell Budgens Shoreham Airport, 151 Brighton Road, Shoreham-By-Sea, West Sussex, BN43 5LD","BN43 5LD","LN/200500302","Alcohol OFF Sales/Supply",NA,NA,NA,-0.289527,50.827484
+3,"Ship Inn","  Ship Inn, Ship Inn, 9 Southwick Street, Southwick, West Sussex, BN42 4AD","BN42 4AD","LN/200500298",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.235345,50.833432
+4,"Shoreham Airport Music Festival","  Shoreham Airport Music Festival, Shoreham Airport, Cecil Pashley Way, Lancing, West Sussex, BN43 5FF","BN43 5FF","LN/201500028",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.29223,50.833219
+5,"Shoreham Cafe","  Shoreham Cafe, 376 Brighton Road, Shoreham-By-Sea, West Sussex, BN43 6RE","BN43 6RE","LN/200900167",NA,"Alcohol ON Sales/Supply",NA,NA,-0.268881,50.832884
+6,"Shoreham Centre Bar","  Shoreham Centre Bar, The Shoreham Centre, Pond Road, Shoreham-By-Sea, West Sussex, BN43 5WU","BN43 5WU","LN/200500358",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.275314,50.834059
+7,"Shoreham Conservative Club","  Shoreham Conservative Club, Conservative Club, Marlborough House, 102-110 High Street, Shoreham-By-Sea, West Sussex, BN43 5DB","BN43 5DB","LN/200500318",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.278177,50.832653
+10,"Shoreham News","  Shoreham News, 7 Buckingham Road, Shoreham-By-Sea, West Sussex, BN43 5UA","BN43 5UA","LN/200500273","Alcohol OFF Sales/Supply",NA,NA,"Late Night Refresh",-0.272374,50.83522
+11,"Shoreham Rowing Club","  Shoreham Rowing Club, Brighton Road, Shoreham-By-Sea, West Sussex, BN43 6RN","BN43 6RN","LN/200500315",NA,"Alcohol ON Sales/Supply",NA,NA,-0.256947,50.831868
+12,"Shoreham Sailing Club","  Shoreham Sailing Club, 223 Harbour Way, Shoreham-By-Sea, West Sussex, BN43 5HZ","BN43 5HZ","LN/200500314",NA,"Alcohol ON Sales/Supply",NA,NA,-0.255248,50.82983
+13,"Shoreham Service Station","  Shoreham Service Station, Shoreham Service Station, 412-414 Brighton Road, Shoreham-By-Sea, West Sussex, BN43 5DR","BN43 5DR","LN/201200037","Alcohol OFF Sales/Supply",NA,NA,NA,-0.274023,50.832068
+14,"Shoreham Snooker Club","  Shoreham Snooker Club, Shoreham Club, 18 West Street, Shoreham-By-Sea, West Sussex, BN43 5WG","BN43 5WG","LN/200500312",NA,"Alcohol ON Sales/Supply",NA,NA,-0.277398,50.833727
+15,"Sir Robert Woodard Academy","  Sir Robert Woodard Academy, Sir Robert Woodard Academy, 44 Upper Boundstone Lane, Sompting, West Sussex, BN15 9QZ","BN15 9QZ","LN/200500288",NA,NA,NA,NA,-0.331207,50.834575
+16,"Slake Spirits","  Slake Spirits, 14 Feversham Close, Shoreham-By-Sea, West Sussex, BN43 5HD","BN43 5HD","LN/201700119","Alcohol OFF Sales/Supply",NA,NA,NA,-0.25968,50.828635
+17,"Slate Restaurant","  Slate Restaurant, 274 Upper Shoreham Road, Shoreham-By-Sea, West Sussex, BN43 6BF","BN43 6BF","LN/200500333","Alcohol OFF Sales/Supply","Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.26028,50.841513
+18,"Sompting Community Centre","  Sompting Community Centre, Harriet Johnson Centre, 18 Loose Lane, Sompting, West Sussex, BN15 0BG","BN15 0BG","LN/200500266",NA,NA,NA,NA,-0.345547,50.833832
+19,"Sompting Convenience Store","  Sompting Convenience Store, 117-119 Sompting Road, Lancing, West Sussex, BN15 9LG","BN15 9LG","LN/200500221","Alcohol OFF Sales/Supply",NA,NA,NA,-0.332203,50.82814
+20,"Sompting Mini Market","  Sompting Mini Market, 5 Seadown Parade, 16 Bowness Avenue, Sompting, West Sussex, BN15 9TP","BN15 9TP","LN/200500294","Alcohol OFF Sales/Supply",NA,NA,NA,-0.34004,50.826928
+21,"Sompting Supermarket","  Sompting Supermarket, 8 Seadown Parade, 16 Bowness Avenue, Sompting, West Sussex, BN15 9TP","BN15 9TP","LN/200800057","Alcohol OFF Sales/Supply",NA,NA,NA,-0.34004,50.826928
+22,"Sompting Village Hall","  Sompting Village Hall, West Street, Sompting, West Sussex, BN15 0BE","BN15 0BE","LN/200700154",NA,NA,NA,NA,-0.345921,50.834494
+23,"Southlands Post Office & Store","  Southlands Post Office & Store, 272 Upper Shoreham Road, Shoreham-By-Sea, West Sussex, BN43 6BF","BN43 6BF","LN/200500271","Alcohol OFF Sales/Supply",NA,NA,NA,-0.26028,50.841513
+24,"Southwick Beer EnGINe","  Southwick Beer EnGINe, Southwick Beer Engine, 2 Southwick Square, Southwick, West Sussex, BN42 4FJ","BN42 4FJ","LN/201800086",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.236854,50.834473
+26,"Southwick Football Club","  Southwick Football Club, Old Barn Way, Southwick, West Sussex, BN42 4NT","BN42 4NT","LN/200500342",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.224404,50.834345
+27,"Southwick Sports and Social Club","  Southwick Sports and Social Club, 11 The Twitten, Southwick, West Sussex, BN42 4DB","BN42 4DB","LN/200500326",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.236566,50.833819
+28,"Spotted Cow","  Spotted Cow, Church Farm, Coombes Road, Coombes, West Sussex, BN15 0RS","BN15 0RS","LN/200500366",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.308272,50.861222
+29,"St Johns Ambulance HQ","  St Johns Ambulance HQ, The Twitten, Southwick, West Sussex, BN42 4DB","BN42 4DB","LN/200500254",NA,NA,NA,NA,-0.236566,50.833819
+30,"St Julians Church Hall","  St Julians Church Hall, Rectory Road, Shoreham-By-Sea, West Sussex, BN43 6EB","BN43 6EB","LN/200500255",NA,NA,NA,NA,-0.247093,50.834481
+33,"Sussex Convenience Store","  Sussex Convenience Store, 374 Brighton Road, Shoreham-By-Sea, West Sussex, BN43 6RE","BN43 6RE","LN/201100098","Alcohol OFF Sales/Supply",NA,NA,NA,-0.268881,50.832884
+34,"Sussex County Croquet Club","  Sussex County Croquet Club, Victoria Road, Southwick, West Sussex, BN42 4DJ","BN42 4DJ","LN/200500310",NA,"Alcohol ON Sales/Supply",NA,NA,-0.241794,50.832641
+35,"Sussex County Football Assoc. (Bar)","  Sussex County Football Assoc. (Bar), Culver Road, Lancing, West Sussex, BN15 9AX","BN15 9AX","LN/201000170",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.323682,50.828924
+36,"Sussex Yacht Club","  Sussex Yacht Club, Riverside, Southwick, West Sussex, BN42 4AW","BN42 4AW","LN/200500332",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.234032,50.831364
+37,"Sussex Yacht Club","  Sussex Yacht Club, 85-89 Brighton Road, Shoreham-By-Sea, West Sussex, BN43 6RF","BN43 6RF","LN/200500355",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.272725,50.832249
+38,"Suter's Yard","  Suter's Yard, 64 High Street, Shoreham-By-Sea, West Sussex, BN43 5DB","BN43 5DB","LN/200500241",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.278177,50.832653
+39,"Swiss Cottage","  Swiss Cottage, Old Shoreham Road, Shoreham-By-Sea, West Sussex, BN43 5TD","BN43 5TD","LN/200500323",NA,"Alcohol ON Sales/Supply","Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.281326,50.836243
+1,"Rajah Restaurant","  Rajah Restaurant, 1 Windmill Parade, 163-183 Old Shoreham Road, Southwick, West Sussex, BN42 4QB","BN42 4QB","LN/200500359",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.233106,50.840457
+2,"Rocking Horse","  Rocking Horse, Rocking Horse Cocktail Bar, 48-52 High Street, Shoreham-By-Sea, West Sussex, BN43 5DA","BN43 5DA","LN/201700447",NA,"Alcohol ON Sales/Supply",NA,NA,-0.275634,50.831893
+3,"Ropetackle Fish and Chip Restaurant","  Ropetackle Fish and Chip Restaurant, 90 High Street, Shoreham-By-Sea, West Sussex, BN43 5DB","BN43 5DB","LN/200500261",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.278177,50.832653
+4,"Royal British Legion","  Royal British Legion, 6 Culver Road, Lancing, West Sussex, BN15 9AX","BN15 9AX","LN/200500316",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.323682,50.828924
+5,"Royal British Legion Club","  Royal British Legion Club, 9-11 Buckingham Road, Shoreham-By-Sea, West Sussex, BN43 5UA","BN43 5UA","LN/200500334",NA,"Alcohol ON Sales/Supply",NA,NA,-0.272374,50.83522
+6,"Royal George","  Royal George, Upper Shoreham Road, Shoreham-By-Sea, West Sussex, BN43 6TA","BN43 6TA","LN/200500363",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.252716,50.841337
+7,"Royal Sovereign Public House","  Royal Sovereign Public House, 6 Middle Street, Shoreham-By-Sea, West Sussex, BN43 5DP","BN43 5DP","LN/200500322",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.275761,50.832687
+1,"Parish's","  Parish's, 40 Southwick Square, Southwick, West Sussex, BN42 4FJ","BN42 4FJ","LN/200800022","Alcohol OFF Sales/Supply",NA,NA,NA,-0.236854,50.834473
+2,"Perch on Lancing Beach","  Perch on Lancing Beach, 28B Brighton Road, Lancing, West Sussex, BN15 8RA","BN15 8RA","LN/201500272",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.324361,50.819869
+3,"Piston Broke","  Piston Broke, 88 High Street, Shoreham-By-Sea, West Sussex, BN43 5DB","BN43 5DB","LN/200500269",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.278177,50.832653
+4,"Premier","  Premier, 157 South Street, Lancing, West Sussex, BN15 8BD","BN15 8BD","LN/201100070","Alcohol OFF Sales/Supply",NA,NA,NA,-0.324392,50.821389
+5,"Premier Garrets Newsagents","  Premier Garrets Newsagents, 7 North Road, Lancing, West Sussex, BN15 9AH","BN15 9AH","LN/201200119","Alcohol OFF Sales/Supply",NA,NA,NA,-0.322829,50.827817
+6,"Premier Local (B&K News)","  Premier Local (B&K News), Shop, 4 Hillbarn Parade, Upper Brighton Road, Sompting, West Sussex, BN15 0LH","BN15 0LH","LN/200500286","Alcohol OFF Sales/Supply",NA,NA,NA,-0.335582,50.837749
+7,"Premier Maxi's Supermarket","  Premier Maxi's Supermarket, 8 High Street, Shoreham-By-Sea, West Sussex, BN43 5DA","BN43 5DA","LN/200900228","Alcohol OFF Sales/Supply",NA,NA,NA,-0.275634,50.831893
+1,"Ocean View Diving Club (Bar)","  Ocean View Diving Club (Bar), 158-160 South Street, Lancing, West Sussex, BN15 8AU","BN15 8AU","LN/200500369",NA,"Alcohol ON Sales/Supply",NA,NA,-0.324553,50.822057
+2,"One Stop","  One Stop, 2-4 Buckingham Road, Shoreham-By-Sea, West Sussex, BN43 5UA","BN43 5UA","LN/200500253","Alcohol OFF Sales/Supply",NA,NA,NA,-0.272374,50.83522
+3,"One Stop","  One Stop, 5 The Parade, Cokeham Road, Sompting, West Sussex, BN15 0AH","BN15 0AH","LN/200500301","Alcohol OFF Sales/Supply",NA,NA,NA,-0.336828,50.832998
+4,"One Stop Convenience Shop","  One Stop Convenience Shop, 3 Middle Road, Shoreham-By-Sea, West Sussex, BN43 6GA","BN43 6GA","LN/200800096","Alcohol OFF Sales/Supply",NA,NA,NA,-0.261063,50.836129
+1,"Naaz Tandoori","  Naaz Tandoori, 14-16 North Road, Lancing, West Sussex, BN15 9AE","BN15 9AE","LN/200500280",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.322417,50.827386
+1,"MacFarlanes Newsagents","  MacFarlanes Newsagents, 21 Southwick Square, Southwick, West Sussex, BN42 4FP","BN42 4FP","LN/201400729","Alcohol OFF Sales/Supply",NA,NA,NA,-0.236313,50.834112
+2,"Magnet News","  Magnet News, 34 Crabtree Lane, Lancing, West Sussex, BN15 9PQ","BN15 9PQ","LN/200600547","Alcohol OFF Sales/Supply",NA,NA,NA,-0.320747,50.831976
+3,"Manor Road Service Station","  Manor Road Service Station, Manor Road Service Station, 96 Manor Road, Lancing, West Sussex, BN15 0HL","BN15 0HL","LN/200500293","Alcohol OFF Sales/Supply",NA,NA,NA,-0.328494,50.837735
+4,"Mansell Road Post Office And News","  Mansell Road Post Office And News, 61 Mansell Road, Shoreham-By-Sea, West Sussex, BN43 6GT","BN43 6GQ","LN/200500222","Alcohol OFF Sales/Supply",NA,NA,NA,-0.25461,50.837022
+5,"Marks And Spencers","  Marks And Spencers, Marks And Spencers Plc, Holmbush Centre, Upper Shoreham Road, Shoreham-By-Sea, West Sussex, BN43 6TD","BN43 6TD","LN/201100128",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.251892,50.842098
+6,"Marquis Of Granby","  Marquis Of Granby, West Street, Sompting, West Sussex, BN15 0AP","BN15 0AP","LN/200500353",NA,"Alcohol ON Sales/Supply","Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.353147,50.83456
+7,"McDonalds","  McDonalds, 2 Eastern Avenue, Shoreham-By-Sea, West Sussex, BN43 6PW","BN43 6PW","LN/200700386",NA,NA,NA,"Late Night Refresh",-0.264335,50.833302
+8,"Meze-Meze","  Meze-Meze, 170-172 South Street, Lancing, West Sussex, BN15 8AU","BN15 8AU","LN/200600505",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.324553,50.822057
+9,"Middle Road Off Licence","  Middle Road Off Licence, 1 Middle Road, Shoreham-By-Sea, West Sussex, BN43 6GA","BN43 6GA","LN/200900022","Alcohol OFF Sales/Supply",NA,NA,NA,-0.261063,50.836129
+10,"Miller and Carter","  Miller and Carter, 43 Manor Road, Lancing, West Sussex, BN15 0EY","BN15 0EY","LN/200500328",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.321246,50.837903
+11,"Mulberrys","  Mulberrys, 38 South Street, Lancing, West Sussex, BN15 8AG","BN15 8AG","LN/200500242","Alcohol OFF Sales/Supply",NA,NA,NA,-0.323213,50.826204
+12,"Mulberrys","  Mulberrys, 10 Kent Close, Shoreham-By-Sea, West Sussex, BN43 6LQ","BN43 6LQ","LN/200500262","Alcohol OFF Sales/Supply",NA,NA,NA,-0.249184,50.835142
+13,"Mulberrys","  Mulberrys, 42 Crabtree Lane, Lancing, West Sussex, BN15 9PQ","BN15 9PQ","LN/201100047","Alcohol OFF Sales/Supply",NA,NA,NA,-0.320747,50.831976
+1,"La Galleria Restaurant","  La Galleria Restaurant, 22 East Street, Shoreham-By-Sea, West Sussex, BN43 5ZE","BN43 5ZE","LN/200500282",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.274502,50.832174
+3,"Lancing College","  Lancing College, College Drive, Lancing, West Sussex, BN15 0RW","BN15 0RW","LN/200600096",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.30509,50.845527
+4,"Lancing Manor Leisure Centre","  Lancing Manor Leisure Centre, Leisure Centre, Lancing Manor, Manor Road, Lancing, West Sussex, BN15 0PH","BN15 0PH","LN/200500267",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.318639,50.837288
+5,"Lancing Parish Council","  Lancing Parish Council, Lancing Parish Hall, 96-98 South Street, Lancing, West Sussex, BN15 8AJ","BN15 8AJ","LN/200500287",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.323665,50.823843
+6,"Lancing Sailing Club","  Lancing Sailing Club, Shopsdam Road, Lancing, West Sussex, BN15 8ES","BN15 8ES","LN/200500309",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.313678,50.821696
+7,"Laylands News & Off Licence","  Laylands News & Off Licence, Former 4, Laylands Road, Southwick, West Sussex, BN41 1PP","BN41 1PP","LN/200700228","Alcohol OFF Sales/Supply",NA,NA,NA,-0.221151,50.832856
+8,"Lidl","  Lidl, Unit 1, Malthouse Trading Estate, Brighton Road, Shoreham-By-Sea, West Sussex, BN43 6RJ","BN43 6RJ","LN/201500335","Alcohol OFF Sales/Supply",NA,NA,NA,-0.258791,50.832687
+1,"Joyson News","  Joyson News, 401 Brighton Road, Lancing, West Sussex, BN15 8JX","BN15 8JX","LN/200500283","Alcohol OFF Sales/Supply",NA,NA,NA,-0.297227,50.825825
+1,"Indian Cottage Tandoori","  Indian Cottage Tandoori, 74-76 High Street, Shoreham-By-Sea, West Sussex, BN43 5DB","BN43 5DB","LN/200500295",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.278177,50.832653
+2,"Into The Blue","  Into The Blue, 29-31 Ferry Road, Shoreham-By-Sea, West Sussex, BN43 5RA","BN43 5RA","LN/200500361",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.271918,50.829069
+1,"H & K Store","  H & K Store, 10-12 Lisher Road, Lancing, West Sussex, BN15 9EY","BN15 9EY","LN/201200046","Alcohol OFF Sales/Supply",NA,NA,NA,-0.314387,50.835464
+2,"Harvester","  Harvester, Britannia Inn, 98 Grinstead Lane, Lancing, West Sussex, BN15 9DP","BN15 9DP","LN/200500356",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.319463,50.831337
+3,"Hellen News","  Hellen News, 29 Brunswick Road, Shoreham-By-Sea, West Sussex, BN43 5WA","BN43 5WA","LN/201300001","Alcohol OFF Sales/Supply",NA,NA,NA,-0.272847,50.833903
+4,"Holmbush Stores, Mace","  Holmbush Stores, Mace, 60 Holmbush Way, Southwick, West Sussex, BN42 4YD","BN42 4YD","LN/200500292","Alcohol OFF Sales/Supply",NA,NA,NA,-0.238196,50.844096
+5,"Hummingbird Restaurant","  Hummingbird Restaurant, Cafe, Terminal Building, 14 Cecil Pashley Way, Lancing, West Sussex, BN43 5FF","BN43 5FF","LN/200500339",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.29223,50.833219
+1,"Gardeners Arms","  Gardeners Arms, West Street, Sompting, West Sussex, BN15 0AR","BN15 0AR","LN/200500346",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.354082,50.834627
+2,"Garretts Newsagents","  Garretts Newsagents, 20-22 Queens Parade, North Road, Lancing, West Sussex, BN15 9BA","BN15 9BA","LN/201500143","Alcohol OFF Sales/Supply",NA,NA,NA,-0.322174,50.829397
+3,"Ginger & Dobbs","  Ginger & Dobbs, 31-32 East Street, Shoreham-By-Sea, West Sussex, BN43 5ZD","BN43 5ZD","LN/201400403",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.273537,50.832935
+1,"","  Ferry Rigg Inn, 1 East Street, Shoreham-By-Sea, West Sussex, BN43 5ZE","BN43 5ZE","LN/200500338",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.274502,50.832174
+2,"Farmers Hotel","  Farmers Hotel, The Farmers, 17 South Street, Lancing, West Sussex, BN15 8AE","BN15 8AE","LN/200500260","Alcohol OFF Sales/Supply",NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.322813,50.82627
+3,"Farmhouse Pizza","  Farmhouse Pizza, 397 Brighton Road, Lancing, West Sussex, BN15 8JX","BN15 8JX","LN/201600369",NA,NA,NA,"Late Night Refresh",-0.297227,50.825825
+4,"For UR Convenience","  For UR Convenience, 116 High Street, Shoreham-By-Sea, West Sussex, BN43 5DB","BN43 5DB","LN/201200095","Alcohol OFF Sales/Supply",NA,NA,NA,-0.278177,50.832653
+5,"Forbidden Palace","  Forbidden Palace, 132 South Street, Lancing, West Sussex, BN15 8AU","BN15 8AU","LN/200500296",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.324553,50.822057
+1,"Empire Club","  Empire Club, 20 Penhill Road, Lancing, West Sussex, BN15 8HJ","BN15 8HJ","LN/200500307",NA,"Alcohol ON Sales/Supply",NA,NA,-0.320996,50.823841
+1,"Drury Cafe","  Drury Cafe, 19 Southwick Square, Southwick, West Sussex, BN42 4FP","BN42 4FP","LN/201700125",NA,"Alcohol ON Sales/Supply",NA,NA,-0.236313,50.834112
+2,"Duke Of Wellington","  Duke Of Wellington, 368 Brighton Road, Shoreham-By-Sea, West Sussex, BN43 6RE","BN43 6RE","LN/200500281",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.268881,50.832884
+1,"Calcutta 16","  Calcutta 16, 112 High Street, Shoreham-By-Sea, West Sussex, BN43 5DB","BN43 5DB","LN/200600000",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.278177,50.832653
+2,"Carats Beach Cafe","  Carats Beach Cafe, Basin Road South, Southwick, West Sussex, BN41 1WD","BN41 1WD","LN/200500299",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.237799,50.828972
+3,"Chambers Bistro","  Chambers Bistro, Restaurant, Town Hall Chambers, 45-49 High Street, Shoreham-By-Sea, West Sussex, BN43 5DD","BN43 5DD","LN/200500243",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.276111,50.831667
+4,"Champion House Social Club","  Champion House Social Club, 9 Southdown Road, Southwick, West Sussex, BN42 4FT","BN42 4FT","LN/200500306",NA,"Alcohol ON Sales/Supply",NA,NA,-0.236054,50.835709
+5,"Charcoal Grill","  Charcoal Grill, 71 High Street, Shoreham-By-Sea, West Sussex, BN43 5DE","BN43 5DE","LN/200500245",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.277713,50.832113
+6,"Co-Op","  Co-Op, 1-2 Royal George Parade, Upper Shoreham Road, Shoreham-By-Sea, West Sussex, BN43 6TB","BN43 6TB","LN/200500247","Alcohol OFF Sales/Supply",NA,NA,NA,-0.25031,50.841142
+7,"Co-Op","  Co-Op, Supermarket, The Co Operative Complex, Ham Road, Shoreham-By-Sea, West Sussex, BN43 6PA","BN43 6PA","LN/200500248","Alcohol OFF Sales/Supply",NA,NA,NA,-0.27066,50.833945
+8,"Co-Op","  Co-Op, 22-26 High Street, Shoreham-By-Sea, West Sussex, BN43 5DA","BN43 5DA","LN/200500250","Alcohol OFF Sales/Supply",NA,NA,NA,-0.275634,50.831893
+9,"Co-Op","  Co-Op, Co Operative Retail Services, 8-16 Southwick Square, Southwick, West Sussex, BN42 4FJ","BN42 4FJ","LN/200500257","Alcohol OFF Sales/Supply",NA,NA,NA,-0.236854,50.834473
+10,"Co-Op","  Co-Op, 57-59 Test Road, Sompting, West Sussex, BN15 0EN","BN15 0EN","LN/200500277","Alcohol OFF Sales/Supply",NA,NA,NA,-0.341676,50.831664
+11,"Co-Op","  Co-Op, 28-30 Queens Parade, North Road, Lancing, West Sussex, BN15 9BA","BN15 9BA","LN/200500368","Alcohol OFF Sales/Supply",NA,NA,NA,-0.322174,50.829397
+12,"Co-op","  Co-op, Manor Road Service Station, 96 Manor Road, Lancing, West Sussex, BN15 0HL","BN15 0HL","LN/201900184","Alcohol OFF Sales/Supply",NA,NA,NA,-0.328494,50.837735
+13,"Cricketers","  Cricketers, The Cricketers, 20 The Green, Southwick, West Sussex, BN42 4GF","BN42 4GF","LN/200500325",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.237909,50.833614
+14,"Crown And Anchor","  Crown And Anchor, Crown And Anchor, 33 High Street, Shoreham-By-Sea, West Sussex, BN43 5DD","BN43 5DD","LN/200500344",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.276111,50.831667
+1,"Barn Theatre and Barn Cafe","  Barn Theatre and Barn Cafe, Southwick Community Centre, 24 Southwick Street, Southwick, West Sussex, BN42 4TE","BN42 4TE","LN/200500300",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.233927,50.834498
+2,"Beach Cafe","  Beach Cafe, 7 Ferry Road, Shoreham-By-Sea, West Sussex, BN43 5RA","BN43 5RA","LN/201000085",NA,NA,"Alcohol ON&OFF Sales/Supply",NA,-0.271918,50.829069
+4,"Beach Green Stores","  Beach Green Stores, 134 Beach Green, Shoreham-By-Sea, West Sussex, BN43 5YA","BN43 5YA","LN/200500259","Alcohol OFF Sales/Supply",NA,NA,NA,-0.283771,50.828785
+5,"Best Health Food Shop","  Best Health Food Shop, 33 East Street, Shoreham-By-Sea, West Sussex, BN43 5ZD","BN43 5ZD","LN/201800318","Alcohol OFF Sales/Supply",NA,NA,NA,-0.273537,50.832935
+6,"Bidfood","  Bidfood, 32 Chartwell Road, Lancing, West Sussex, BN15 8TU","BN15 8TU","LN/201800325","Alcohol OFF Sales/Supply",NA,NA,NA,-0.333711,50.82324
+7,"Brio Ristorante","  Brio Ristorante, Restaurant, William De Braose House, 46 Brunswick Road, Shoreham-By-Sea, West Sussex, BN43 5WB","BN43 5WB","LN/200500371",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.272646,50.833606
+8,"Buckingham Park Primary School","  Buckingham Park Primary School, Buckingham Road, Shoreham-By-Sea, West Sussex, BN43 5UD","BN43 5UD","LN/200600089",NA,NA,NA,NA,-0.270575,50.83851
+1,"Adur Express Convenience Store","  Adur Express Convenience Store, 141-143 The Gardens, Southwick, West Sussex, BN42 4AR","BN42 4AR","LN/200800206","Alcohol OFF Sales/Supply",NA,NA,NA,-0.227175,50.832408
+2,"Adur Indoor Bowling Club","  Adur Indoor Bowling Club, Old Barn Way, Southwick, West Sussex, BN42 4NT","BN42 4NT","LN/200900156",NA,"Alcohol ON Sales/Supply",NA,NA,-0.224404,50.834345
+3,"Albion Inn","  Albion Inn, 13 Fishersgate Terrace, Southwick, West Sussex, BN41 1PH","BN41 1PH","LN/200500351",NA,NA,"Alcohol ON&OFF Sales/Supply","Late Night Refresh",-0.218396,50.830989
+4,"Ali Baba","  Ali Baba, 9 Southwick Square, Southwick, West Sussex, BN42 4FP","BN42 4FP","LN/200500264","Alcohol OFF Sales/Supply","Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.236313,50.834112
+5,"Alishaan Indian Restaurant","  Alishaan Indian Restaurant, West Street, Sompting, West Sussex, BN15 0AP","BN15 0AP","LN/200500272",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.353147,50.83456
+6,"Artisan Cafe","  Artisan Cafe, 2 Tarmount Lane, Shoreham-By-Sea, West Sussex, BN43 6DA","BN43 6DA","LN/201500162",NA,"Alcohol ON Sales/Supply",NA,"Late Night Refresh",-0.273103,50.832785
+7,"ASDA","  ASDA, South Street, Lancing, West Sussex, BN15 8AG","BN15 8AG","LN/200500246","Alcohol OFF Sales/Supply",NA,NA,"Late Night Refresh",-0.323213,50.826204
+8,"Atlantic Store","  Atlantic Store, 13 Ferry Road, Shoreham-By-Sea, West Sussex, BN43 5RA","BN43 5RA","LN/200800108","Alcohol OFF Sales/Supply",NA,NA,NA,-0.271918,50.829069
