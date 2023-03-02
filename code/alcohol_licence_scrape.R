@@ -22,14 +22,14 @@ download.file('https://assets.publishing.service.gov.uk/government/uploads/syste
               paste0(data_directory, '/alcohol_latr_night_licensing_tables_2022.ods'),
               mode = 'wb')
 }
-
-premises_24_hour_licence_df_raw <- read_ods(paste0(data_directory, '/alcohol_latr_night_licensing_tables_2022.ods'),
-                             sheet = 'Table_4',
-                             skip = 7) 
-
-latest_total_24_hour_licenced_premises <- premises_24_hour_licence_df_raw %>%
-  filter(`Licensing authority` %in% c('Adur', 'Arun', 'Chichester', 'Crawley', 'Horsham',  'Mid Sussex', 'Worthing')) %>% 
-  filter(`Year \n(as at 31 March)` == '2021/22') 
+# 
+# premises_24_hour_licence_df_raw <- read_ods(paste0(data_directory, '/alcohol_latr_night_licensing_tables_2022.ods'),
+#                              sheet = 'Table_4',
+#                              skip = 7) 
+# 
+# latest_total_24_hour_licenced_premises <- premises_24_hour_licence_df_raw %>%
+#   filter(`Licensing authority` %in% c('Adur', 'Arun', 'Chichester', 'Crawley', 'Horsham',  'Mid Sussex', 'Worthing')) %>% 
+#   filter(`Year \n(as at 31 March)` == '2021/22') 
 
 premises_licences <- read_ods(paste0(data_directory, '/alcohol_latr_night_licensing_tables_2022.ods'),
          sheet = 'Table_2',
@@ -151,11 +151,29 @@ Premises_table <- Premises_table %>%
   left_join(lookup_result, by = c('Postcode' = 'postcode'))
 
 Premises_table %>% 
-  write.csv(., paste0(output_directory, '/Adur_premises.csv'), row.names = FALSE)
+  write.csv(., paste0(data_directory, '/Adur_premises.csv'), row.names = FALSE)
 
 Premises_table %>% 
   filter(is.na(`Alcohol OFF Sales/Supply`) & is.na(`Alcohol ON Sales/Supply`) & is.na(`Alcohol ON&OFF Sales/Supply`))
 
 
+# Arun ####
+
+Arun_premises <- read_csv(paste0(data_directory, '/Arun_current_Premises_licence_register_extracted_02_03_2023.csv'))
+
+# Chichester ####
+# Difficult
+
+# Crawley ####
+
+# We can try to scrape the site but it is a javascript card type search function with no easy way to download all results 
+calls_premises_webpage <- read_html('https://crawley.gov.uk/business/licensing/licences-register') %>%
+  html_nodes("a") %>%
+  html_attr("href")
+
+# Horsham ####
+# Difficult
+
 # Worthing
-# https://www.adur-worthing.gov.uk/media/Media,127816,smxx.pdf
+
+Worthing_premises <- pdf_text('https://www.adur-worthing.gov.uk/media/Media,127816,smxx.pdf')
