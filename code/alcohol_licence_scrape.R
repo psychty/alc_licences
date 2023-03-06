@@ -39,7 +39,7 @@ latest_premises_licences <- premises_licences %>%
   filter(`Licensing authority` %in% c('Adur', 'Arun', 'Chichester', 'Crawley', 'Horsham',  'Mid Sussex', 'Worthing')) %>% 
   filter(`Year \n(as at 31 March)` == '2021/22') 
 
-# These figures are what I'm aiming for.
+# These figures are the figures I'm aiming for.
 
 # Adur ####
 
@@ -234,32 +234,46 @@ calls_premises_webpage <- read_html('https://crawley.gov.uk/business/licensing/l
 # Horsham ####
 # Difficult
 
-# Worthing
+# Worthing ####
 
-Worthing_premises <- pdf_text('https://www.adur-worthing.gov.uk/media/Media,127816,smxx.pdf')
+# And this was the day I conceded that we do need Excel for some things.
 
-#There are five pages. each page is a row, V1 om the top row is the heading, everything else is a new licence
-Worthing_table <- as.data.frame(str_split(Worthing_premises, "\n", simplify = TRUE))
-
-Worthing_headings <- c('Reference','Licence Type Desc','Trader Name','Licence Holder','Premises Address','First Issue','Transfer Date','Alcohol','Ward')
-
-
-
-# %>% 
-  group_by(V9) %>% 
-  mutate(Licence_number = ifelse(V9 != '  Licensing Act 2003', NA, row_number())) %>%
-  ungroup() %>% 
-  fill(Licence_number, .direction = 'down') %>% 
-  filter(V9 == '  Licensing Act 2003') %>% 
-  select(Licence_number,
-         Name = V6,
-         Address = V11) %>% 
+Worthing_premises <- read_csv(paste0(data_directory, '/Worthing_premises.csv')) %>% 
+  rename(Address = 'Premises Address') %>% 
   mutate(spaces = str_count(Address, ' ')) %>% 
-  mutate(Postcode = str_after_nth(Address, " ", spaces - 1)) %>% 
+  mutate(Postcode = gsub('\\.', '', str_after_nth(Address, " ", spaces - 1))) %>% 
+  mutate(Postcode = ifelse(`Trader Name` == 'Green Man Ale & Cider House', 'BN14 7PA', ifelse(`Trader Name` == 'Downsbrook Primary School', 'BN14 8GD', ifelse(`Trader Name` == "St Mary's R.C. Primary School", 'BN11 4BD', ifelse(Postcode == 'BN13 1PR02/03/2006', 'BN13 1PR', ifelse(`Trader Name` == 'Our Lady of Sion Junior School', 'BN11 1RE', Postcode)))))) %>% 
   select(!spaces) %>% 
-  mutate(Reference = str_trim(str_after_nth(Name, "Reference", 1), side = 'both')) %>% 
-  mutate(Name = str_trim(str_before_first(Name, 'Reference')))
+  filter(!Postcode %in% c('Worthing, West Sussex', 'Worthing, West', 'West Sussex', 'Gardens, Worthing', 'Sussex, BN', "BN13 3Q25/05/2006", 'Road, Worthing,', 'West Sussex,', 'BN14 8', "Road, Wo17/11/2006", 'Worthing, Wes25/05/2006', 'BN11 2', 'West Sus')) 
+
+worthing_postcodes <- Worthing_premises %>% 
+  select(Postcode) %>% 
+  unique()
+
+
+for(i in 1:length(unique(worthing_postcodes$Postcode))){
+  if(i == 1){lookup_result <- data.frame(postcode = character(), longitude = double(), latitude = double())
+  }
   
+  lookup_result_x <- postcode_lookup(unique(worthing_postcodes$Postcode)[i]) %>% 
+    select(postcode, longitude, latitude)
+  
+  lookup_result <- lookup_result_x %>% 
+    bind_rows(lookup_result) 
+  
+}
+
+lookup_result <- lookup_result %>% 
+  bind_rows(data.frame(postcode = 'BN11 3AN', longitude = -0.370446, latitude = 50.81086)) %>% 
+  bind_rows(data.frame(postcode = 'BN13 1RB', longitude =  -0.409505, latitude = 50.82776)) %>% 
+  bind_rows(data.frame(postcode = 'BN11 3DY', longitude =  -0.36622, latitude = 50.81117)) %>% 
+  unique()
+
+Worthing_premises <- Worthing_premises %>% 
+  left_join(lookup_result, by = c('Postcode' = 'postcode'))
+
+Worthing_premises %>% 
+  write.csv(., paste0(data_directory, '/Worthing_premises.csv'), row.names = FALSE)
 
 # Working with compiled datasets ####
 # 
@@ -267,16 +281,125 @@ Worthing_headings <- c('Reference','Licence Type Desc','Trader Name','Licence Ho
 #   If you run commercial premises that are used for the sale or supply of alcohol, you must have a premises licence.
 #   
 #   A premises licence is also required if you provide hot food and drinks between 11pm and 5am, and/or if you provide the following forms of regulated entertainment, either for profit or for charity:
-#     
-#     theatrical performance
+#  
+#   Theatrical performance
 #   film exhibition
 #   indoor sporting event
 #   boxing or wrestling (indoor or outdoor)
 #   live music
 #   recorded music
 #   dance
+  
 #   Applications for a premises licence must include the applicants' details and those of the designated premises' supervisor, who must be a personal licence holder.
 #   
 #   The designated premises' supervisor is responsible for making sure the premises operate legally and meet any conditions attached to the licence. Applications must include a detailed plan of the premises and an operating schedule.
 # 
 # Private clubs are an exception to the requirement for a premises licence, as they may instead require a Club Premises Certificate.
+
+Adur_df <- read_csv(paste0(data_directory, '/Adur_premises.csv')) %>% 
+    select(!Licence_number)
+
+Arun_df <- read_csv(paste0(data_directory, '/Arun_premises.csv')) %>% 
+  rename(Reference = 'Licence Number',
+         Name = 'Trading Name',
+         Address = 'Dtf Location') %>% 
+  mutate(Reference = as.character(Reference))
+
+Worthing_df <- read_csv(paste0(data_directory, '/Worthing_premises.csv')) %>% 
+  rename(Name = 'Trader Name')
+
+combined_df <- Adur_df %>% 
+  bind_rows(Arun_df) %>% 
+  bind_rows(Worthing_df) %>% 
+  filter(!is.na(latitude)) %>% 
+  filter(!str_detect(Name, '[Ss]chool'))
+
+# Plotting points
+
+areas <- c('Adur', 'Arun', 'Chichester', 'Crawley', 'Horsham', 'Mid Sussex', 'Worthing')
+# 
+# lad_boundaries_clipped_sf <- st_read('https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2022_UK_BFC_V3_2022/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson') %>% 
+#     filter(LAD22NM %in% c('Chichester'))
+#    
+# lad_boundaries_full_extent_sf <- st_read('https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2022_UK_BFE_V3_2022/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson') %>%
+#     filter(LAD22NM %in% areas & LAD22NM != 'Chichester')
+# 
+# lad_boundaries_sf <- rbind(lad_boundaries_clipped_sf, lad_boundaries_full_extent_sf)
+# lad_boundaries_spdf <- as_Spatial(lad_boundaries_sf, IDs = lad_boundaries_sf$LAD22NM)
+# 
+# geojson_write(ms_simplify(geojson_json(lad_boundaries_spdf), keep = 0.3), file = paste0(output_directory, '/west_sussex_LTLAs.geojson'))
+# 
+ltla <- st_read(paste0(output_directory, '/west_sussex_LTLAs.geojson')) %>% 
+  filter(LAD22NM %in% c('Adur', 'Arun', 'Worthing'))
+
+# IMD
+
+
+IMD_2019 <- read_csv('https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/845345/File_7_-_All_IoD2019_Scores__Ranks__Deciles_and_Population_Denominators_3.csv') %>% 
+  select(LSOA11CD = "LSOA code (2011)", LTLA =  "Local Authority District name (2019)", IMD_2019_Score = "Index of Multiple Deprivation (IMD) Score", IMD_National_Rank = "Index of Multiple Deprivation (IMD) Rank (where 1 is most deprived)", IMD_National_Decile =  "Index of Multiple Deprivation (IMD) Decile (where 1 is most deprived 10% of LSOAs)" ) %>% 
+  mutate(IMD_National_Decile = factor(ifelse(IMD_National_Decile == 1, '10% most deprived',  ifelse(IMD_National_Decile == 2, 'Decile 2',  ifelse(IMD_National_Decile == 3, 'Decile 3',  ifelse(IMD_National_Decile == 4, 'Decile 4',  ifelse(IMD_National_Decile == 5, 'Decile 5',  ifelse(IMD_National_Decile == 6, 'Decile 6',  ifelse(IMD_National_Decile == 7, 'Decile 7',  ifelse(IMD_National_Decile == 8, 'Decile 8',  ifelse(IMD_National_Decile == 9, 'Decile 9',  ifelse(IMD_National_Decile == 10, '10% least deprived', NA)))))))))), levels = c('10% most deprived', 'Decile 2', 'Decile 3', 'Decile 4', 'Decile 5', 'Decile 6', 'Decile 7', 'Decile 8', 'Decile 9', '10% least deprived'))) %>% 
+  filter(LTLA %in% areas) %>% 
+  arrange(desc(IMD_2019_Score)) %>% 
+  mutate(Rank_in_West_Sussex = rank(desc(IMD_2019_Score))) %>% 
+  mutate(Decile_in_West_Sussex = abs(ntile(IMD_2019_Score, 10) - 11)) %>% 
+  mutate(Decile_in_West_Sussex = factor(ifelse(Decile_in_West_Sussex == 1, '10% most deprived',  ifelse(Decile_in_West_Sussex == 2, 'Decile 2',  ifelse(Decile_in_West_Sussex == 3, 'Decile 3',  ifelse(Decile_in_West_Sussex == 4, 'Decile 4',  ifelse(Decile_in_West_Sussex == 5, 'Decile 5',  ifelse(Decile_in_West_Sussex == 6, 'Decile 6',  ifelse(Decile_in_West_Sussex == 7, 'Decile 7',  ifelse(Decile_in_West_Sussex == 8, 'Decile 8',  ifelse(Decile_in_West_Sussex == 9, 'Decile 9',  ifelse(Decile_in_West_Sussex == 10, '10% least deprived', NA)))))))))), levels = c('10% most deprived', 'Decile 2', 'Decile 3', 'Decile 4', 'Decile 5', 'Decile 6', 'Decile 7', 'Decile 8', 'Decile 9', '10% least deprived'))) 
+
+
+# Read in the lsoa geojson boundaries for our lsoas (actually this downloads all 30,000+ and then we filter)
+# LSOA boundaries ####
+lsoa_2011_sf <- st_read('https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/LSOA_Dec_2011_Boundaries_Generalised_Clipped_BGC_EW_V3_2022/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson') 
+
+# Convert it to a spatial polygon data frame
+lsoa_2011_boundaries_spdf <-  as_Spatial(lsoa_2011_sf, IDs = lsoa_2011_sf$LSOA11CD) %>% 
+  filter(LSOA11CD %in% IMD_2019$LSOA11CD) %>% 
+  arrange(LSOA11CD) %>% 
+  left_join(IMD_2019, by = 'LSOA11CD')
+
+imd_colours <- c("#0000FF","#2080FF","#40E0FF","#70FFD0","#90FFB0","#C0E1B0","#E0FFA0","#E0FF70","#F0FF30","#FFFF00")
+
+imd_palette <- colorFactor(imd_colours,
+                              levels = levels(lsoa_2011_boundaries_spdf$IMD_National_Decile))
+
+leaflet() %>% 
+  addControl(paste0("<font size = '1px'><b>West Sussex Licenced Premises:</b><br>Data correct as at March 2023;</font>"),
+             position = 'topright') %>%
+  addTiles(urlTemplate = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+           attribution = paste0('&copy; <a href=https://www.openstreetmap.org/copyright>OpenStreetMap</a> contributors &copy; <a href=https://carto.com/attributions>CARTO</a><br>Contains OS data ? Crown copyright and database right 2021<br>Zoom in/out using your mouse wheel or the plus (+) and minus (-) buttons and click on an circle to find out more.')) %>%
+  addPolygons(data = subset(lsoa_2011_boundaries_spdf, LTLA %in% c('Adur', 'Arun','Worthing')),
+              stroke = TRUE, 
+              color = "#000000",
+              fillColor = ~imd_palette(IMD_National_Decile),
+              fillOpacity = .5,
+              weight = 1,
+              popup = paste0('LSOA 2011: ', lsoa_2011_boundaries_spdf$LSOA11NM, ' (', lsoa_2011_boundaries_spdf$LSOA11CD, ')'),
+              group = 'Show neighbourhood deprivation') %>% 
+  addPolygons(data = ltla,
+              fill = FALSE,
+              stroke = TRUE,
+              color = 'maroon') %>% 
+  addCircleMarkers(lng = combined_df$longitude,
+                   lat = combined_df$latitude,
+                   label = paste0(combined_df$Name),
+                   color = 'purple',
+                   radius = 4,
+                   fillOpacity = 1,
+                   stroke = FALSE,
+                   group = 'Show premises') %>% 
+  addHeatmap(lng = combined_df$longitude,
+             lat = combined_df$latitude,
+             intensity = 5,
+             blur = 20, 
+             max = 1, 
+             radius = 20,
+             group = 'Show density of premises') %>% 
+  addLegend(position = 'bottomright',
+            colors = imd_colours,
+            labels = levels(lsoa_2011_boundaries_spdf$IMD_National_Decile),
+            title = 'Deprivation decile<br>(national ranks)',
+            opacity = 1) %>% 
+  addLayersControl(overlayGroups = c('Show neighbourhood deprivation', 'Show premises', 'Show density of premises'),
+                   options = layersControlOptions(collapsed = FALSE))
+
+
+
+
