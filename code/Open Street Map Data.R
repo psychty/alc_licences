@@ -6,7 +6,7 @@ easypackages::libraries(packages)
 areas <- c('Adur', 'Arun', 'Chichester', 'Crawley', 'Horsham', 'Mid Sussex', 'Worthing')
 
 # base directory
-base_directory <- '//chi_nas_prod2.corporate.westsussex.gov.uk/groups2.bu/Public Health Directorate/PH Research Unit/Alcohol/Alcohol HEA/Licences'
+#base_directory <- '//chi_nas_prod2.corporate.westsussex.gov.uk/groups2.bu/Public Health Directorate/PH Research Unit/Alcohol/Alcohol HEA/Licences'
 base_directory <- '~/Repositories/alc_licences/'
 
 list.files(base_directory)
@@ -76,14 +76,18 @@ q1 <- area_bb %>%
                   value = c('bar', 'pub', 'restaurant', 'nightclub')) %>% 
   osmdata_sf() # converts the results into an sf object
 
+# The extract takes a long time, so it is worth saving locally and running only when you need to update it.
+# The following will only run if the data file does not exist.
+if(file.exists(paste0(output_directory, '/wsx_OSM_bar_club_spdf.geojson'))!= TRUE){
+
 # At the moment the object is sf format (spatial features), but we need to turn it into a spatial points dataframe
 # We also only want to keep the points that fall within the polygons (the bounding box is a square/rectangle shape and may include some points outside of the ares)
 bar_club_spdf <- st_intersection(lad_boundaries_sf, q1$osm_points) %>% 
   as_Spatial() 
 
-# This is a bit messy as some data entries have 'name' filled in, and others do not, and for some cinemas, individual screens are including rather than the whole cinema. You may have to make some decisions on how to clean up the data.
+# This is a bit messy as some data entries have 'name' filled in, and others do not. You may have to make some decisions on how to clean up the data.
 geojson_write(geojson_json(bar_club_spdf), file = paste0(output_directory, '/wsx_OSM_bar_club_spdf.geojson'))
-
+}
 
 bar_club_spdf@data %>% View()
 
@@ -130,10 +134,10 @@ q3 <- area_bb %>%
 all_shop_tags <- available_tags('shop')
 # all_shop_tags %>% View() 
 
-gambling_spdf <- st_intersection(wsx_boundaries_sf, q2$osm_points) %>% 
+gambling_spdf <- st_intersection(lad_boundaries_sf, q2$osm_points) %>% 
   as_Spatial() 
 
-betting_spdf <- st_intersection(wsx_boundaries_sf, q3$osm_points) %>% 
+betting_spdf <- st_intersection(lad_boundaries_sf, q3$osm_points) %>% 
   as_Spatial() 
 
 leaflet() %>% 
@@ -141,15 +145,15 @@ leaflet() %>%
   addPolygons(data = wsx_spdf,
               fill = NA,
               weight = 1) %>%
-  addCircleMarkers(data = cinema_spdf,
-                   fillColor = 'maroon',
-                   fillOpacity = 1,
-                   color = '#ffffff',
-                   opacity = 1,
-                   weight = 1,
-                   radius = 8,
-                   label = ~name,
-                   popup = paste0('<Strong>', cinema_spdf$name, '</Strong><br><br>', cinema_spdf$addr.place, '<br>', cinema_spdf$addr.postcode)) %>% 
+  # addCircleMarkers(data = cinema_spdf,
+  #                  fillColor = 'maroon',
+  #                  fillOpacity = 1,
+  #                  color = '#ffffff',
+  #                  opacity = 1,
+  #                  weight = 1,
+  #                  radius = 8,
+  #                  label = ~name,
+  #                  popup = paste0('<Strong>', cinema_spdf$name, '</Strong><br><br>', cinema_spdf$addr.place, '<br>', cinema_spdf$addr.postcode)) %>% 
   addCircleMarkers(data = gambling_spdf,
                    fillColor = 'purple',
                    fillOpacity = 1,
